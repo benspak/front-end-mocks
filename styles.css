@@ -1,0 +1,60 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+h2 {
+    color: #333;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+.task {
+    transition: all 0.15s ease-in-out;
+}
+
+.task:hover {
+    background-color: #e9ecef;
+}
+
+button {
+    transition: all 0.15s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.modal-header, .modal-body {
+    transition: all 0.15s ease-in-out;
+}
+
+/* Custom Toast for Notifications */
+.toast {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    min-width: 200px;
+    opacity: 0.9;
+}
+
+/* Fade in/out animations */
+.fade {
+    animation: fadeInOut 0.15s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}

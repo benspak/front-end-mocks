@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Archived Tasks - ADHD Task Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ADHD Task Manager</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tasks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Archived Tasks</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Archived Tasks Section -->
+    <section class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-sm-12">
+                <h2 class="text-center mb-4">Archived Tasks</h2>
+                <div id="archived-tasks-list">
+                    <!-- Archived Task Item -->
+                    <div class="task mb-3 border p-3 rounded">
+                        <h5>Task 1 - Completed on 20th Oct 2024</h5>
+                        <p class="text-muted">Description: Completed mockup design</p>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="collapse"
+                            data-bs-target="#taskDetails1">+ See details</a>
+                        <div id="taskDetails1" class="collapse mt-2">
+                            <p><strong>Due Date:</strong> 19th Oct 2024</p>
+                            <p><strong>Reminder:</strong> Every day at 10:00 AM</p>
+                            <button class="btn btn-outline-primary btn-sm">Restore Task</button>
+                        </div>
+                    </div>
+
+                    <!-- Another Archived Task Item -->
+                    <div class="task mb-3 border p-3 rounded">
+                        <h5>Task 2 - Completed on 18th Oct 2024</h5>
+                        <p class="text-muted">Description: Finished backend integration</p>
+                        <a href="#" class="text-decoration-none" data-bs-toggle="collapse"
+                            data-bs-target="#taskDetails2">+ See details</a>
+                        <div id="taskDetails2" class="collapse mt-2">
+                            <p><strong>Due Date:</strong> 17th Oct 2024</p>
+                            <p><strong>Reminder:</strong> Every day at 9:00 AM</p>
+                            <button class="btn btn-outline-primary btn-sm">Restore Task</button>
+                        </div>
+                    </div>
+
+                    <!-- Add more tasks as needed -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

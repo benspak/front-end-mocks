@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buddy Search - ADHD Task Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ADHD Task Manager</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Buddy Search</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Buddy Search Section -->
+    <section class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <h3 class="text-center mb-4">Find a Buddy</h3>
+                <!-- Search Bar -->
+                <div class="input-group mb-4">
+                    <input type="text" class="form-control" id="searchQuery" placeholder="Search by username or location">
+                    <button class="btn btn-primary" type="button" id="searchButton">Search</button>
+                </div>
+
+                <!-- Search Results -->
+                <div id="searchResults">
+                    <!-- Sample Result (You can replace this with actual results from the search function) -->
+                    <div class="card p-3 mb-3">
+                        <h5>@johndoe</h5>
+                        <p class="text-muted">Location: New York, USA</p>
+                        <button class="btn btn-outline-success btn-sm">Add Buddy</button>
+                    </div>
+
+                    <div class="card p-3 mb-3">
+                        <h5>@janesmith</h5>
+                        <p class="text-muted">Location: Los Angeles, USA</p>
+                        <button class="btn btn-outline-success btn-sm">Add Buddy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript for Search Functionality -->
+    <script>
+        document.getElementById('searchButton').addEventListener('click', function() {
+            const query = document.getElementById('searchQuery').value;
+            // Simulate a search function
+            console.log('Search query:', query);
+            // Add functionality to search by username or location and dynamically populate results
+        });
+    </script>
+</body>
+
+</html>

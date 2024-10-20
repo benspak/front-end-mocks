@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reminders Overview - ADHD Task Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ADHD Task Manager</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tasks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reminders Overview</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Reminders Overview Section -->
+    <section class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-sm-12">
+                <h2 class="text-center mb-4">Reminders Overview</h2>
+
+                <!-- Reminders for Task 1 -->
+                <div class="mb-4">
+                    <h5>
+                        <a class="text-decoration-none" data-bs-toggle="collapse" href="#reminderTask1" role="button"
+                           aria-expanded="false" aria-controls="reminderTask1">
+                            Task 1: Complete the task manager design <span class="text-muted">- Click to view reminders</span>
+                        </a>
+                    </h5>
+                    <div class="collapse" id="reminderTask1">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <strong>Reminder:</strong> Every day at 10:00 AM
+                                <button class="btn btn-outline-primary btn-sm float-end">Edit</button>
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Reminder:</strong> Custom Interval - Every 2 hours
+                                <button class="btn btn-outline-primary btn-sm float-end">Edit</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Reminders for Task 2 -->
+                <div class="mb-4">
+                    <h5>
+                        <a class="text-decoration-none" data-bs-toggle="collapse" href="#reminderTask2" role="button"
+                           aria-expanded="false" aria-controls="reminderTask2">
+                            Task 2: Finalize backend integration <span class="text-muted">- Click to view reminders</span>
+                        </a>
+                    </h5>
+                    <div class="collapse" id="reminderTask2">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <strong>Reminder:</strong> Every day at 12:00 PM
+                                <button class="btn btn-outline-primary btn-sm float-end">Edit</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Reminders for Task 3 -->
+                <div class="mb-4">
+                    <h5>
+                        <a class="text-decoration-none" data-bs-toggle="collapse" href="#reminderTask3" role="button"
+                           aria-expanded="false" aria-controls="reminderTask3">
+                            Task 3: Prepare presentation slides <span class="text-muted">- Click to view reminders</span>
+                        </a>
+                    </h5>
+                    <div class="collapse" id="reminderTask3">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <strong>Reminder:</strong> Every day at 9:00 AM
+                                <button class="btn btn-outline-primary btn-sm float-end">Edit</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Reminders for Task 4 -->
+                <div class="mb-4">
+                    <h5>
+                        <a class="text-decoration-none" data-bs-toggle="collapse" href="#reminderTask4" role="button"
+                           aria-expanded="false" aria-controls="reminderTask4">
+                            Task 4: Submit final project report <span class="text-muted">- Click to view reminders</span>
+                        </a>
+                    </h5>
+                    <div class="collapse" id="reminderTask4">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <strong>Reminder:</strong> Every day at 11:00 AM
+                                <button class="btn btn-outline-primary btn-sm float-end">Edit</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
